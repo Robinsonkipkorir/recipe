@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px; /* Increased max-width for larger screens */
+    margin: auto;
+    /* background: white; */
+    padding: 20px;
+    /* border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+} */
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 38%; /* Set width to 40% */
+    padding: 10px; /* Padding for the input field */
+    margin-bottom: 10px; /* Space below the input field */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Font size */
+    display: block; /* Ensure it's treated as a block element */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+}
+
+button {
+    width: 40%; /* Set width to 40% */
+    padding: 10px; /* Padding for the button */
+    background-color: #28a745; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease; /* Transition effect */
+    display: block; /* Ensure it's treated as a block element */
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    margin-top: 10px; /* Space above the button */
+}
+
+
+button:hover {
+    background-color: #218838;
+}
+
+#recipe-results {
+    display: flex; /* Enable Flexbox */
+    flex-wrap: wrap; /* Allow wrapping of cards to the next line */
+    justify-content: flex-start; /* Align items to the start */
+    margin-top: 20px;
+}
+
+.recipe {
+    margin: 10px; /* Add margin around each card */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center align the content */
+    background-color: #fafafa;
+    transition: transform 0.2s;
+    width: calc(33.33% - 20px); /* Set width for three cards per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.recipe:hover {
+    transform: scale(1.02);
+}
+
+.recipe img {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    border-radius: 4px;
+    margin-bottom: 10px; /* Add space below the image */
+}
+
+.recipe h3 {
+    margin: 0;
+    color: #333;
+    text-align: center; /* Center text */
+}
+.recipe p {
+    margin: 5px 0; /* Add some margin to paragraphs */
+    color: #666; /* Lighter color for description */
+    text-align: center; /* Center text */
+}
+
+.recipe strong {
+    color: #28a745; /* Color for price to make it stand out */
+}
